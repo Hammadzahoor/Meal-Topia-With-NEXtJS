@@ -74,11 +74,3 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 3. Commit your changes (`git commit -m 'Add some feature'`)
 4. Push to the branch (`git push origin feature/YourFeature`)
 5. Open a pull request
-
-## License
-
-This project is licensed under the MIT License.
-
-## Contact
-
-For questions or feedback, please contact [your-email@example.com].
