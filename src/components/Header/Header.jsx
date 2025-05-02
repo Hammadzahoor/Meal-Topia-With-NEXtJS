@@ -28,6 +28,14 @@ const Header = () => {
         <div className="flex gap-6 items-center">
           <nav className="hidden lg:flex gap-6 text-lg">
             <Link
+              href="/"
+              className={
+                pathname === "/" ? "font-bold text-[#00CB71]" : "font-normal"
+              }
+            >
+              Home
+            </Link>
+            <Link
               href="/about"
               className={
                 pathname === "/about"
@@ -55,17 +63,7 @@ const Header = () => {
                   : "font-normal"
               }
             >
-              Articles
-            </Link>
-            <Link
-              href="/events"
-              className={
-                pathname === "/events"
-                  ? "font-bold text-[#00CB71]"
-                  : "font-normal"
-              }
-            >
-              Events
+              Articles & Events
             </Link>
             <Link
               href="/careers"
