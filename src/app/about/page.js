@@ -50,17 +50,16 @@ export default function AboutPage() {
   ];
 
   return (
-    <main className="min-h-screen bg-[url('/bg-pattern.png')] bg-repeat">
-      <div className="pt-24 pb-16">
+    <>
+      <section className="w-full flex justify-center py-20 mt-10 md:py-24">
         <div className="container px-4">
-          {/* Title */}
-          <h1 className="text-4xl md:text-5xl font-semibold text-[#4C1D95] text-center mb-12">
-            About Company
-          </h1>
+          {/* Section Header */}
+          <div className=" mb-12 flex flex-col justify-center items-center  ">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#4C1D95] mb-6">
+              About Company
+            </h2>
 
-          {/* Introduction Text */}
-          <div className="max-w-4xl mb-16">
-            <div className="space-y-6">
+            <div className=" mb-16 space-y-6">
               <p className="text-gray-600 text-lg">
                 Our Web Application is an all-encompassing, user-friendly
                 "advisor" that combines and considers all of the preferences and
@@ -75,9 +74,7 @@ export default function AboutPage() {
               </p>
             </div>
           </div>
-
-          {/* Features and Illustration */}
-          <div className="flex flex-col lg:flex-row items-start gap-16">
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-16">
             {/* Features List */}
             <div className="flex-1">
               <div className="space-y-5">
@@ -135,7 +132,7 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </div>
-    </main>
+      </section>
+    </>
   );
 }
