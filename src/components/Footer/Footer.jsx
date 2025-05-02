@@ -176,7 +176,7 @@ const Footer = () => {
       {/* Second Row - Purple Background */}
       <div className="w-full bg-[#562D80]">
         <div className="w-full flex justify-center">
-          <div className="container flex justify-between items-center px-3 xl:px-0 py-20">
+          <div className="container flex justify-between items-center px-3 xl:px-0 py-5">
             {/* Add your content for the second row here */}
             <h1 className="text-xs w-1/2 text-white/60">
               Copyright © 2022 MEALTOPIA LIFESTYLE CORP, All Rights Reserved.

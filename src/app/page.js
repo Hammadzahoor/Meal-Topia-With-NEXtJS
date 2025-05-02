@@ -63,7 +63,7 @@ export default function Home() {
       <section className="w-full flex justify-center py-16 md:py-24">
         <div className="container px-4">
           {/* Section Title */}
-          <h2 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold text-[#4C1D95] mb-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold text-[#412B59] mb-16">
             What MealTopia Gives To You!
           </h2>
 
@@ -95,7 +95,7 @@ export default function Home() {
                 </div>
 
                 {/* Content */}
-                <h3 className="text-xl text-[#4C1D95] font-semibold mb-2">
+                <h3 className="text-xl text-[#412B59] font-semibold mb-2">
                   {value.title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
@@ -113,7 +113,7 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row items-center gap-8">
             {/* Left Content */}
             <div className="w-full lg:w-1/2 flex flex-col gap-8">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#4C1D95] leading-tight">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#663698] leading-tight">
                 THE MAIN SERVICE
                 <br />
                 MEALTOPIA OFFERS
@@ -218,7 +218,7 @@ export default function Home() {
         <div className="container px-4">
           {/* Section Header */}
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#4C1D95] mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#412B59] mb-6">
               Our Latest Articles & Events
             </h2>
             <p className="text-gray-600 text-lg max-w-3xl mx-auto">
