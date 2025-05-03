@@ -4,46 +4,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { FiZap } from "react-icons/fi";
 import { useRef } from "react";
-
-const careers = [
-  {
-    title: "Marketing Specialist in Advertising",
-    description: "Enim nec rhoncus volutpat nullam eros sapien pharetra.",
-    slug: "marketing-specialist-in-advertising",
-  },
-  {
-    title: "Nutrition Specialist",
-    description: "Enim nec rhoncus volutpat nullam eros sapien pharetra.",
-    slug: "nutrition-specialist",
-  },
-  {
-    title: "Marketing Specialist in Advertising",
-    description: "Enim nec rhoncus volutpat nullam eros sapien pharetra.",
-    slug: "marketing-specialist-in-advertising-2",
-  },
-  {
-    title: "Nutrition Specialist",
-    description: "Enim nec rhoncus volutpat nullam eros sapien pharetra.",
-    slug: "nutrition-specialist-2",
-  },
-];
-
-const jobDetails = {
-  title: "Marketing Specialist in Advertising",
-  date: "25 Apr 2022",
-  intro:
-    "An advertising specialist is a professional who develops and implements advertising and marketing strategies for a business or company, either independently or as part of a team.",
-  requirements: [
-    "A university degree or college diploma in business marketing",
-  ],
-  duties: [
-    "Assess characteristics of the Web App to be promoted",
-    "Develop and implement advertising campaigns appropriate for print or electronic media",
-    "Gather, research and prepare communications material for internal and external audiences",
-    "Prepare reports, briefs, speeches, presentations, and press releases",
-    "Develop and organize workshops, meetings and other events for publicity and information purposes",
-  ],
-};
+import { careers } from "@/data/careers";
 
 export default function CareerDetail({ params }) {
   const career = careers.find((c) => c.slug === params.slug);
@@ -71,32 +32,28 @@ export default function CareerDetail({ params }) {
             Careers
           </Link>
           <span className="mx-1">/</span>
-          <span className="font-semibold text-[#3d2257]">
-            {jobDetails.title}
-          </span>
+          <span className="font-semibold text-[#3d2257]">{career.title}</span>
         </div>
         {/* Title & Date */}
         <h1 className="text-3xl md:text-4xl font-bold text-[#3d2257] mb-2 text-left w-full">
-          {jobDetails.title}
+          {career.title}
         </h1>
-        <div className="text-gray-400 text-sm mb-6 w-full">
-          {jobDetails.date}
-        </div>
+        <div className="text-gray-400 text-sm mb-6 w-full">{career.date}</div>
         {/* Intro */}
-        <p className="text-[#5b6c7b] mb-6 w-full">{jobDetails.intro}</p>
+        <p className="text-[#5b6c7b] mb-6 w-full">{career.intro}</p>
         {/* Requirements & Duties */}
         <div className="w-full mb-8">
           <h2 className="text-xl font-semibold text-[#3d2257] mb-2">
             Requirements
           </h2>
           <ul className="list-disc ml-6 text-[#5b6c7b] mb-4">
-            {jobDetails.requirements.map((req, i) => (
+            {career.requirements.map((req, i) => (
               <li key={i}>{req}</li>
             ))}
           </ul>
           <h2 className="text-xl font-semibold text-[#3d2257] mb-2">Duties:</h2>
           <ul className="list-disc ml-6 text-[#5b6c7b]">
-            {jobDetails.duties.map((duty, i) => (
+            {career.duties.map((duty, i) => (
               <li key={i}>{duty}</li>
             ))}
           </ul>
