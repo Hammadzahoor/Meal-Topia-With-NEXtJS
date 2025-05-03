@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/sheet";
 import { HiMenu } from "react-icons/hi";
 import { ModeToggle } from "../ModeToggle";
+import { FileX } from "lucide-react";
 
 const Header = () => {
   const pathname = usePathname();
@@ -22,7 +23,7 @@ const Header = () => {
       <div className="py-5 px-3 xl:px-0 container flex justify-between items-center">
         <div className="flex-shrink-0">
           <Link href="/">
-            <Image src={Logo} alt="Logo" className="" />
+            <Image src={Logo} alt="Logo" className="w-45" />
           </Link>
         </div>
         <div className="flex gap-6 items-center">
@@ -97,13 +98,82 @@ const Header = () => {
               <HiMenu size={30} />
             </SheetTrigger>
             <SheetContent>
-              <SheetHeader>
-                <SheetTitle>Are you absolutely sure?</SheetTitle>
-                <SheetDescription>
-                  This action cannot be undone. This will permanently delete
-                  your account and remove your data from our servers.
-                </SheetDescription>
+              <SheetHeader className={"mt-8"}>
+                <SheetTitle className="flex justify-center items-center">
+                  <div className="flex items-center gap-3">
+                    <Link href="/">
+                      <Image src={Logo} alt="Logo" width={200} />
+                    </Link>
+                    <ModeToggle />
+                  </div>
+                </SheetTitle>
               </SheetHeader>
+              <SheetDescription>
+                <div className="flex flex-col gap-6 py-5 px-4">
+                  <nav className="flex flex-col gap-6 text-lg">
+                    <Link
+                      href="/"
+                      className={
+                        pathname === "/"
+                          ? "font-bold text-[#00CB71]"
+                          : "font-normal"
+                      }
+                    >
+                      Home
+                    </Link>
+                    <Link
+                      href="/about"
+                      className={
+                        pathname === "/about"
+                          ? "font-bold text-[#00CB71]"
+                          : "font-normal"
+                      }
+                    >
+                      About
+                    </Link>
+                    <Link
+                      href="/team"
+                      className={
+                        pathname === "/team"
+                          ? "font-bold text-[#00CB71]"
+                          : "font-normal"
+                      }
+                    >
+                      Team
+                    </Link>
+                    <Link
+                      href="/articles"
+                      className={
+                        pathname === "/articles"
+                          ? "font-bold text-[#00CB71]"
+                          : "font-normal"
+                      }
+                    >
+                      Articles & Events
+                    </Link>
+                    <Link
+                      href="/careers"
+                      className={
+                        pathname === "/careers"
+                          ? "font-bold text-[#00CB71]"
+                          : "font-normal"
+                      }
+                    >
+                      Careers
+                    </Link>
+                    <Link
+                      href="/contact"
+                      className={
+                        pathname === "/contact"
+                          ? "font-bold text-[#00CB71]"
+                          : "font-normal"
+                      }
+                    >
+                      Contact
+                    </Link>
+                  </nav>
+                </div>
+              </SheetDescription>
             </SheetContent>
           </Sheet>
         </div>

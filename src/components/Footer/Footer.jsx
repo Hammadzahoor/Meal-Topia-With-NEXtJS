@@ -4,6 +4,14 @@ import Link from "next/link";
 import Image from "next/image";
 import FooterLogo from "../../../public/footerlogo.svg";
 import { usePathname } from "next/navigation";
+import {
+  FaPhoneAlt,
+  FaFacebookF,
+  FaInstagram,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   const pathname = usePathname();
@@ -119,52 +127,52 @@ const Footer = () => {
                 <h3 className="text-lg font-semibold mb-4">Get In Touch</h3>
                 <ul className="space-y-3">
                   <li className="flex items-center gap-2">
-                    <span>📞</span>
-                    <a
+                    <FaPhoneAlt />
+                    <Link
                       href="tel:+01500028306"
                       className="hover:text-gray-300 transition-colors"
                     >
                       +01500028306
-                    </a>
+                    </Link>
                   </li>
                   <li className="flex items-center gap-2">
-                    <span>✉️</span>
-                    <a
+                    <MdEmail />
+                    <Link
                       href="mailto:info@mealtopia.com"
                       className="hover:text-gray-300 transition-colors"
                     >
                       info@mealtopia.com
-                    </a>
+                    </Link>
                   </li>
                   <li className="flex gap-4 mt-4">
-                    <a
+                    <Link
                       href="#"
                       className="hover:text-gray-300 transition-colors"
                       aria-label="Facebook"
                     >
-                      <i className="fab fa-facebook text-xl"></i>
-                    </a>
-                    <a
+                      <FaFacebookF className="text-xl" />
+                    </Link>
+                    <Link
                       href="#"
                       className="hover:text-gray-300 transition-colors"
                       aria-label="Instagram"
                     >
-                      <i className="fab fa-instagram text-xl"></i>
-                    </a>
-                    <a
+                      <FaInstagram className="text-xl" />
+                    </Link>
+                    <Link
                       href="#"
                       className="hover:text-gray-300 transition-colors"
                       aria-label="Twitter"
                     >
-                      <i className="fab fa-twitter text-xl"></i>
-                    </a>
-                    <a
+                      <FaTwitter className="text-xl" />
+                    </Link>
+                    <Link
                       href="#"
                       className="hover:text-gray-300 transition-colors"
                       aria-label="YouTube"
                     >
-                      <i className="fab fa-youtube text-xl"></i>
-                    </a>
+                      <FaYoutube className="text-xl" />
+                    </Link>
                   </li>
                 </ul>
               </div>
