@@ -4,12 +4,9 @@ import { careers } from "@/data/careers";
 
 const Careers = () => {
   return (
-    <div className="pt-35 bg-[#f8f8fa] py-16 px-4 flex flex-col items-center relative overflow-hidden">
+    <div className="pt-35 bg-[url(/aboutbg.png)] bg-cover bg-no-repeat py-16 px-4 flex flex-col items-center relative overflow-hidden">
       {/* Decorative background pattern (optional) */}
-      <div
-        className="absolute inset-0 opacity-10 pointer-events-none select-none bg-[url('/pattern.svg')] bg-repeat"
-        style={{ zIndex: 0 }}
-      />
+      <div />
       <div className="container relative z-10 flex flex-col items-center">
         <h1 className="text-4xl md:text-5xl font-bold text-center text-[#3d2257] mb-6 mt-2">
           Careers
