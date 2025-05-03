@@ -7,7 +7,7 @@ export default function ArticlesPage() {
     <div className="w-full min-h-screen flex flex-col items-center justify-center bg-[url(/articlesbg.png)] pt-35 pb-16">
       {/* Page Header */}
       <div className="container px-4 mx-auto mb-12">
-        <h1 className="text-4xl md:text-5xl font-semibold text-[#4C1D95] text-center mb-4">
+        <h1 className="text-4xl md:text-5xl font-semibold text-[#412B59] text-center mb-4">
           Our Latest Articles & Events
         </h1>
         <p className="text-gray-600 text-center max-w-3xl mx-auto">

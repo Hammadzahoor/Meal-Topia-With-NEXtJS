@@ -8,7 +8,7 @@ const Careers = () => {
       {/* Decorative background pattern (optional) */}
       <div />
       <div className="container relative z-10 flex flex-col items-center">
-        <h1 className="text-4xl md:text-5xl font-bold text-center text-[#3d2257] mb-6 mt-2">
+        <h1 className="text-4xl md:text-5xl font-bold text-center text-[#412B59] mb-6 mt-2">
           Careers
         </h1>
         <p className="text-[#5b6c7b] mb-12 text-lg">
