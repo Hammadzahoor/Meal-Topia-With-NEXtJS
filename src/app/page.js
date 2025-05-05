@@ -40,22 +40,37 @@ const values = [
 export default function Home() {
   return (
     <main>
-      <section className="mt-[100px] flex justify-center items-center h-screen w-full bg-[url(/hero-img.png)] bg-center bg-no-repeat bg-cover">
-        <div className="container px-3 xl:px-0 flex items-center justify-center">
-          <div className="w-1/2 flex flex-col gap-5">
-            <Image src="/logo2.svg" alt="alt" width={368} height={60} />
-            <h1 className="text-5xl capitalize text-[#00CB71]">
-              your guide to economic, healthy lifestyle
-            </h1>
-            <p className="text-lg w-3/4 mb-4">
-              Eating healthy can be a challenge in today's fast- paced world.
-              However, choosing healthy food without overspending is possible,
-              and made easier with our application.
-            </p>
-            <AppStoreButton />
-            <PlayStoreButton />
+      <section className="py-16 lg:py-24 px-4 sm:px-6 flex items-center min-h-screen w-full bg-[url(/hero-img.png)] bg-center bg-no-repeat bg-cover ">
+        <div className="container px-4 mx-auto">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
+            {/* Left content column */}
+            <div className="w-full lg:w-1/2 flex flex-col gap-4 lg:gap-5">
+              <div className="w-full max-w-[368px]">
+                <Image
+                  src="/logo2.svg"
+                  alt="Logo"
+                  width={368}
+                  height={60}
+                  className=" w-[260px] md:w-[320px] lg:w-full"
+                />
+              </div>
+              <h1 className="text-3xl sm:text-4xl md:w-md lg:text-5xl capitalize text-[#00CB71] font-bold">
+                your guide to economic, healthy lifestyle
+              </h1>
+              <p className="text-base sm:text-lg w-full lg:w-3/4 md:w-1/2 mb-2 lg:mb-4 text-[#5F6D7E]">
+                Eating healthy can be a challenge in today's fast-paced world.
+                However, choosing healthy food without overspending is possible,
+                and made easier with our application.
+              </p>
+              <div className="flex flex-col  gap-4">
+                <AppStoreButton />
+                <PlayStoreButton />
+              </div>
+            </div>
+
+            {/* Right column - empty for image background */}
+            <div className="hidden lg:block lg:w-1/2"></div>
           </div>
-          <div className="w-1/2"></div>
         </div>
       </section>
 

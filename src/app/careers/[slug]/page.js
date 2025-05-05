@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { FiZap } from "react-icons/fi";
-import { useRef } from "react";
 import { careers } from "@/data/careers";
 
 export default function CareerDetail({ params }) {

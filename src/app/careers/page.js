@@ -6,8 +6,8 @@ const Careers = () => {
   return (
     <div className="pt-35 bg-[url(/aboutbg.png)] bg-cover bg-no-repeat py-16 px-4 flex flex-col items-center relative overflow-hidden">
       {/* Decorative background pattern (optional) */}
-      <div />
-      <div className="container relative z-10 flex flex-col items-center">
+
+      <div className="container px-4 relative z-10 flex flex-col items-center">
         <h1 className="text-4xl md:text-5xl font-bold text-center text-[#412B59] mb-6 mt-2">
           Careers
         </h1>
@@ -21,7 +21,7 @@ const Careers = () => {
           {careers.map((career, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-xl shadow-md p-8 flex flex-col gap-4 transition-transform hover:scale-105"
+              className="bg-white rounded-xl shadow-md p-8 flex flex-col gap-4 transition-transform hover:scale-101"
             >
               <div className="flex items-center justify-center w-12 h-12 rounded-full border border-gray-200 mb-2">
                 <FiZap className="text-green-500 text-3xl" />

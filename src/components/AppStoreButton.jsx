@@ -6,7 +6,7 @@ import Image from "next/image";
 const PlayStoreButton = () => {
   return (
     <Link href="href">
-      <Image src={AppStore} alt="alt" />
+      <Image src={AppStore} alt="alt" className="w-50" />
     </Link>
   );
 };

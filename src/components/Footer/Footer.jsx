@@ -19,7 +19,7 @@ const Footer = () => {
     <footer className="w-full flex flex-col bg-[url(/footerbgimg.png)]">
       {/* First Row - Main Content */}
       <div className="w-full flex justify-center">
-        <div className="container px-3 xl:px-0">
+        <div className="container px-3 ">
           <div className="flex flex-col lg:flex-row gap-8 py-20">
             {/* Logo Section */}
             <div className="w-full lg:w-[40%] flex  lg:justify-start">
@@ -184,17 +184,17 @@ const Footer = () => {
       {/* Second Row - Purple Background */}
       <div className="w-full bg-[#562D80]">
         <div className="w-full flex justify-center">
-          <div className="container flex justify-between items-center px-3 xl:px-0 py-5">
+          <div className="container flex justify-between items-center px-3 py-5">
             {/* Add your content for the second row here */}
             <h1 className="text-xs w-1/2 text-white/60">
               Copyright © 2022 MEALTOPIA LIFESTYLE CORP, All Rights Reserved.
             </h1>
             <ul className="flex gap-5 text-xs text-white/80">
               <li>
-                <Link href={"/policy"}>Privacy Policy</Link>
+                <Link href={"/privacy-policy"}>Privacy Policy</Link>
               </li>
               <li>
-                <Link href={"/conditons"}>Terms and Condotions</Link>
+                <Link href={"/terms-and-conditions"}>Terms and Condotions</Link>
               </li>
             </ul>
           </div>

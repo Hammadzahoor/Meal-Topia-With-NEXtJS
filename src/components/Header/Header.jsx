@@ -20,7 +20,7 @@ const Header = () => {
   const pathname = usePathname();
   return (
     <header className=" flex justify-center fixed w-full bg-white dark:bg-[#0A0A0A] top-0 shadow z-50 ">
-      <div className="py-5 px-3 xl:px-0 container flex justify-between items-center">
+      <div className="py-5 px-3 xl:px-3 container flex justify-between items-center">
         <div className="flex-shrink-0">
           <Link href="/">
             <Image src={Logo} alt="Logo" className="w-45" />

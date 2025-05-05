@@ -54,9 +54,9 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-p {
+/* p {
   color: #5f6d7e;
-}
+} */
 
 :root {
   --radius: 0.625rem;
