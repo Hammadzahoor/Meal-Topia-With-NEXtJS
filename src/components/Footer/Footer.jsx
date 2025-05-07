@@ -35,10 +35,12 @@ const Footer = () => {
             </div>
 
             {/* Links and Contact Section */}
-            <div className="w-full lg:w-[60%] flex flex-col sm:flex-row gap-8 text-white">
+            <div className="w-full lg:w-[60%] flex flex-col sm:flex-row gap-8 text-white font-[MayekaDemiBold]">
               {/* Quick Links */}
               <div className="flex-1 md:w-[33%]">
-                <h3 className="text-lg font-semibold mb-4">Quick Link</h3>
+                <h3 className="text-lg font-semibold mb-4 opacity-60 font-[AbdoMasterRegular]">
+                  Quick Link
+                </h3>
                 <ul className="space-y-3">
                   <li>
                     <Link
@@ -81,7 +83,9 @@ const Footer = () => {
 
               {/* More Links */}
               <div className="flex-1 md:w-[33%]">
-                <h3 className="text-lg font-semibold mb-4">Quick Link</h3>
+                <h3 className="text-lg font-semibold mb-4 opacity-60 font-[AbdoMasterRegular]">
+                  Quick Link
+                </h3>
                 <ul className="space-y-3">
                   <li>
                     <Link
@@ -124,7 +128,9 @@ const Footer = () => {
 
               {/* Contact Info */}
               <div className="flex-1 md:w-[33%]">
-                <h3 className="text-lg font-semibold mb-4">Get In Touch</h3>
+                <h3 className="text-lg font-semibold mb-4 opacity-60 font-[AbdoMasterRegular]">
+                  Get In Touch
+                </h3>
                 <ul className="space-y-3">
                   <li className="flex items-center gap-2">
                     <FaPhoneAlt />
@@ -184,12 +190,12 @@ const Footer = () => {
       {/* Second Row - Purple Background */}
       <div className="w-full bg-[#562D80]">
         <div className="w-full flex justify-center">
-          <div className="container flex justify-between items-center px-3 py-5">
+          <div className="container flex justify-between items-center px-3 py-5 font-[MayekaDemiBold]">
             {/* Add your content for the second row here */}
             <h1 className="text-xs w-1/2 text-white/60">
               Copyright © 2022 MEALTOPIA LIFESTYLE CORP, All Rights Reserved.
             </h1>
-            <ul className="flex gap-5 text-xs text-white/80">
+            <ul className="flex gap-5 text-xs text-white/80 ">
               <li>
                 <Link href={"/privacy-policy"}>Privacy Policy</Link>
               </li>

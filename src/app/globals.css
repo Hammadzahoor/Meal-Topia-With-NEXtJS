@@ -2,6 +2,25 @@
 @import "tw-animate-css";
 @plugin "@tailwindcss/typography";
 
+@font-face {
+  font-family: "MayekaRegular";
+  src: url("/fonts/mayeka-regular-demo.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MayekaDemiBold";
+  src: url("/fonts/mayeka-demi-bold-demo.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AbdoMasterRegular";
+  src: url("/fonts/abdo-master-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -54,9 +73,18 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-/* p {
-  color: #5f6d7e;
-} */
+p {
+  font-family: "AbdoMasterRegular";
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "MayekaDemiBold";
+  font-weight: 600;
+}
+.container {
+  max-width: 1050px;
+}
 
 :root {
   --radius: 0.625rem;

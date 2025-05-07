@@ -40,8 +40,8 @@ const values = [
 export default function Home() {
   return (
     <main>
-      <section className="py-16 lg:py-24 px-4 sm:px-6 flex items-center min-h-screen w-full bg-[url(/hero-img.png)] bg-center bg-no-repeat bg-cover ">
-        <div className="container px-4 mx-auto">
+      <section className="py-20 lg:py-24 px-4 flex items-center min-h-screen w-full bg-[url(/hero-img.png)] bg-no-repeat bg-left md:bg-center bg-cover ">
+        <div className="container px-0 xl:px-4 my-0 md:my-0 lg:my-12 mx-auto">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
             {/* Left content column */}
             <div className="w-full lg:w-1/2 flex flex-col gap-4 lg:gap-5">
@@ -51,13 +51,13 @@ export default function Home() {
                   alt="Logo"
                   width={368}
                   height={60}
-                  className=" w-[260px] md:w-[320px] lg:w-full"
+                  className="object-cover w-[260px] md:w-[320px] lg:w-full h-auto lg:h-15 md:h-12"
                 />
               </div>
-              <h1 className="text-3xl sm:text-4xl md:w-md lg:text-5xl capitalize text-[#00CB71] font-bold">
+              <h1 className="text-3xl sm:text-4xl md:w-md lg:w-lg capitalize font-[MayekaBold] text-[#00CB71] font-bold">
                 your guide to economic, healthy lifestyle
               </h1>
-              <p className="text-base sm:text-lg w-full lg:w-3/4 md:w-1/2 mb-2 lg:mb-4 text-[#5F6D7E]">
+              <p className="text-base sm:text-lg w-full lg:w-[85%] md:w-1/2 mb-2 lg:mb-4 text-[#5F6D7E]">
                 Eating healthy can be a challenge in today's fast-paced world.
                 However, choosing healthy food without overspending is possible,
                 and made easier with our application.
@@ -110,7 +110,7 @@ export default function Home() {
                 </div>
 
                 {/* Content */}
-                <h3 className="text-xl text-[#412B59] font-semibold mb-2">
+                <h3 className="text-xl text-[#412B59] font-semibold font-[MayekaDemiBold] mb-2">
                   {value.title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
@@ -140,7 +140,7 @@ export default function Home() {
                 in grocery stores, food markets, restaurants, etc.
               </p>
 
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-4 font-[AbdoMasterRegular]">
                 <div className="flex items-center gap-2">
                   <svg
                     className="w-6 h-6 text-[#00CB71]"
