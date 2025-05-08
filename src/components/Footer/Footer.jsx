@@ -192,7 +192,7 @@ const Footer = () => {
         <div className="w-full flex justify-center">
           <div className="container flex flex-col md:flex-row justify-between gap-2 items-center px-3 py-5 font-[MayekaDemiBold]">
             {/* Add your content for the second row here */}
-            <h1 className="text-xs text-center w-full md:w-1/2 text-white/60">
+            <h1 className="text-xs text-center md:text-start w-full md:w-1/2 text-white/60">
               Copyright © 2022 MEALTOPIA LIFESTYLE CORP, All Rights Reserved.
             </h1>
             <ul className="flex gap-5 text-xs text-white/80 ">

@@ -99,13 +99,11 @@ const Header = () => {
             </SheetTrigger>
             <SheetContent>
               <SheetHeader className={"mt-8"}>
-                <SheetTitle className="flex justify-center items-center">
-                  <div className="flex items-center gap-3">
-                    <Link href="/">
-                      <Image src={Logo} alt="Logo" width={200} />
-                    </Link>
-                    <ModeToggle />
-                  </div>
+                <SheetTitle className="flex justify-between items-center gap-3">
+                  <Link href="/">
+                    <Image src={Logo} alt="Logo" width={200} />
+                  </Link>
+                  <ModeToggle />
                 </SheetTitle>
               </SheetHeader>
               <SheetDescription>
