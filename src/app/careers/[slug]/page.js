@@ -26,12 +26,12 @@ export default function CareerDetail({ params }) {
         <div className="w-full text-sm text-[#5b6c7b] mb-2">
           <Link
             href="/careers"
-            className="hover:underline text-[#3d2257] font-semibold"
+            className="hover:underline text-[#5F6D7E] font-medium"
           >
             Careers
           </Link>
           <span className="mx-1">/</span>
-          <span className="font-semibold text-[#3d2257]">{career.title}</span>
+          <span className="font-bold text-[#5F6D7E]">{career.title}</span>
         </div>
         {/* Title & Date */}
         <h1 className="text-3xl md:text-4xl font-bold text-[#3d2257] mb-2 text-left w-full">

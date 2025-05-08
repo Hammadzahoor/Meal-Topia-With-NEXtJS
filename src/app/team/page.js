@@ -28,7 +28,7 @@ export default function TeamPage() {
 
   return (
     <div className=" mt-20 w-full bg-[url(/aboutbg.png)] bg-cover bg-no-repeat flex flex-col items-center bg-gray-50">
-      <div className="container flex flex-col items-center px-4 py-16">
+      <div className="container flex flex-col items-center px-5 py-16">
         <div className="flex flex-col items-center">
           {/* Team Header */}
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#412B59] mb-6">

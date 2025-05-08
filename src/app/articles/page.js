@@ -1,15 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import { articles } from "@/data/articles";
+import { trimText } from "@/lib/trimText";
 
 export default function ArticlesPage() {
   return (
     <div className="w-full min-h-screen flex flex-col items-center justify-center bg-[url(/articlesbg.png)] pt-35 pb-16">
       {/* Page Header */}
-      <div className="container px-4 mx-auto mb-12">
-        <h1 className="text-4xl md:text-5xl font-semibold text-[#412B59] text-center mb-4">
+      <div className="container px-5 mx-auto mb-12">
+        <h2 className="text-4xl md:text-5xl font-semibold text-[#412B59] text-center mb-4">
           Our Latest Articles & Events
-        </h1>
+        </h2>
         <p className="text-gray-600 text-center max-w-3xl mx-auto">
           people find it very difficult to find the time to cook their food.
           cooking food can be costly if you don't know what ingredients to buy
@@ -18,7 +19,7 @@ export default function ArticlesPage() {
       </div>
 
       {/* Articles Grid */}
-      <div className="container px-4 mx-auto">
+      <div className="container px-5 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12">
           {articles.map((article) => (
             <div key={article.id} className="flex flex-col">
@@ -36,18 +37,24 @@ export default function ArticlesPage() {
               </Link>
 
               {/* Article Meta */}
-              <div className="text-gray-500 text-sm mb-2">{article.date}</div>
+              <div className="text-gray-500 text-sm mb-2">
+                {article.publicationDate}
+              </div>
 
               {/* Article Title */}
               <Link href={`/articles/${article.slug}`}>
-                <h2 className="text-[#4C1D95] text-xl font-semibold mb-3 hover:text-[#00CB71] transition-colors">
-                  {article.title}
+                <h2
+                  className="text-[#4C1D95] text-xl font-semibold mb-3 hover:text-[#00CB71] transition-colors title={article.title}"
+                  title={article.title}
+                >
+                  {/* {article.title} */}
+                  {trimText(article.title, 25)}
                 </h2>
               </Link>
 
               {/* Article Description */}
               <p className="text-gray-600 mb-4 line-clamp-2">
-                {article.description}
+                {article.introduction}
               </p>
 
               {/* Learn More Link */}

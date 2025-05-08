@@ -52,7 +52,7 @@ export default function AboutPage() {
   return (
     <>
       <section className="w-full bg-[url(/aboutbg.png)] flex justify-center py-20 mt-10 md:py-24">
-        <div className="container px-4">
+        <div className="container px-5">
           {/* Section Header */}
           <div className=" mb-12 flex flex-col justify-center items-center  ">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#412B59] mb-6">

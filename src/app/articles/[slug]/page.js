@@ -13,54 +13,99 @@ export default function ArticlePage({ params }) {
   return (
     <main className="min-h-screen bg-[url('/bg-pattern.png')] bg-repeat">
       <article className="py-24">
-        <div className="container px-4">
-          {/* Article Header */}
-          <header className="mb-8">
-            <div className="flex items-center gap-4 text-sm text-gray-600 mb-4">
-              <time dateTime={article.date}>{article.date}</time>
-              <span>•</span>
-              <span>By {article.author}</span>
+        <div className="container mx-auto px-4 py-8 max-w-6xl">
+          <div className="flex flex-col space-y-6">
+            {/* Breadcrumb - Always present */}
+            <div className="w-full text-sm text-[#5b6c7b] mb-2">
+              <Link
+                href="/articles"
+                className="hover:underline text-[#5F6D7E] font-medium"
+              >
+                Articles & Events
+              </Link>
+              <span className="mx-1">/</span>
+              <span className="font-bold text-[#5F6D7E]">{article.title}</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-semibold text-[#4C1D95] mb-6">
+
+            {/* Main Heading - Always present */}
+            <h1 className="text-3xl md:text-4xl font-bold font-[MayekaBold] text-[#412B59]">
               {article.title}
             </h1>
-          </header>
 
-          {/* Featured Image */}
-          <div className="relative w-full aspect-[16/9] mb-12 rounded-lg overflow-hidden">
-            <Image
-              src={article.image}
-              alt={article.title}
-              fill
-              className="object-cover"
-              priority
-            />
-          </div>
+            {/* Publication date - Optional */}
+            {article.publicationDate && (
+              <div className="text-sm text-gray-500">
+                <time dateTime={article.dateTime}>
+                  {article.publicationDate}
+                </time>
+              </div>
+            )}
 
-          {/* Article Content */}
-          <div className="prose prose-lg max-w-none">
-            <div dangerouslySetInnerHTML={{ __html: article.content }} />
-          </div>
+            {/* Introduction - Optional */}
+            {article.introduction && (
+              <p className="text-lg text-gray-700">{article.introduction}</p>
+            )}
 
-          {/* Back Link */}
-          <div className="mt-12">
-            <Link
-              href="/articles"
-              className="inline-flex items-center text-[#4C1D95] hover:text-[#3b1773]"
-            >
-              <svg
-                className="w-4 h-4 mr-2"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
-                  clipRule="evenodd"
+            {/* Main Image - Optional */}
+            {article.image && (
+              <div className="my-8">
+                <img
+                  src={article.image}
+                  alt={article.title}
+                  className="w-full h-[550px] rounded-lg shadow-lg"
                 />
-              </svg>
-              Back to Articles
-            </Link>
+                {article.imageCaption && (
+                  <p className="text-gray-600 italic text-sm mt-2">
+                    {article.imageCaption}
+                  </p>
+                )}
+              </div>
+            )}
+
+            {/* Content Sections - Optional */}
+            {article.sections &&
+              article.sections.map((section, index) => (
+                <div key={index} className="mt-6">
+                  {section.heading && (
+                    <h2 className="text-2xl font-bold text-purple-800 mb-4">
+                      {section.heading}
+                    </h2>
+                  )}
+
+                  {section.content && (
+                    <div className="space-y-4 text-gray-700">
+                      {section.content.map((paragraph, pIndex) => (
+                        <p key={pIndex}>{paragraph}</p>
+                      ))}
+
+                      {section.quote && (
+                        <blockquote className="border-l-4 border-blue-500 pl-4 py-2 my-6 text-blue-600 italic">
+                          "{section.quote}"
+                        </blockquote>
+                      )}
+                    </div>
+                  )}
+                </div>
+              ))}
+
+            {/* List section - Optional */}
+            {article.listSection && (
+              <div className="mt-6">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">
+                  {article.listSection.heading}
+                </h3>
+                <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                  {article.listSection.items.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {/* Conclusion - Optional */}
+            {article.conclusion && (
+              <p className="text-gray-700 mt-6">{article.conclusion}</p>
+            )}
           </div>
         </div>
       </article>

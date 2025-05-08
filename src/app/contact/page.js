@@ -3,12 +3,12 @@ import React from "react";
 const page = () => {
   return (
     <div className=" mt-20 px-4 w-full bg-[url(/aboutbg.png)] bg-cover bg-no-repeat flex flex-col items-center bg-gray-50">
-      <div className="container flex flex-col items-center px-2 sm:px-4 md:px-6 lg:px-8 py-16">
+      <div className="container flex flex-col items-center px-4 lg:px-5 py-16">
         <div>
           {/* Team Header */}
-          <h1 className="text-4xl md:text-5xl font-bold text-center text-[#412B59] mb-6 mt-2">
+          <h2 className="text-4xl md:text-5xl text-center text-[#412B59] mb-6 mt-2">
             Quick Contact
-          </h1>
+          </h2>
 
           {/* Team Description */}
           <p className="text-gray-600 mb-12 text-center capitalize">

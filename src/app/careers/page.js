@@ -5,12 +5,10 @@ import { careers } from "@/data/careers";
 const Careers = () => {
   return (
     <div className="pt-35 bg-[url(/aboutbg.png)] bg-cover bg-no-repeat py-16 px-4 flex flex-col items-center relative overflow-hidden">
-      {/* Decorative background pattern (optional) */}
-
-      <div className="container px-4 relative z-10 flex flex-col items-center">
-        <h1 className="text-4xl md:text-5xl font-bold text-center text-[#412B59] mb-6 mt-2">
+      <div className="container px-5 relative z-10 flex flex-col items-center">
+        <h2 className="text-4xl md:text-5xl font-bold text-center text-[#412B59] mb-6 mt-2">
           Careers
-        </h1>
+        </h2>
         <p className="text-[#5b6c7b] mb-12 text-lg">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -26,7 +24,7 @@ const Careers = () => {
               <div className="flex items-center justify-center w-12 h-12 rounded-full border border-gray-200 mb-2">
                 <FiZap className="text-green-500 text-3xl" />
               </div>
-              <h3 className="text-2xl font-semibold text-purple-700 mb-2">
+              <h3 className="text-2xl font-semibold text-purple-700 mb-2 font-[MayekaDemiBold]">
                 {career.title}
               </h3>
               <p className="text-gray-500 flex-1">{career.description}</p>
