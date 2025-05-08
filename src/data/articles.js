@@ -45,7 +45,7 @@ export const articles = [
     dateTime: "2022-04-25",
     introduction:
       "With food being one of the highest numbers on the expenses list, it's no surprise that it's becoming more and more vital to do the math when going grocery shopping.",
-    image: "/article1.png",
+    image: "/article2.png",
     imageCaption:
       "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     sections: [
@@ -81,7 +81,7 @@ export const articles = [
     dateTime: "2022-04-25",
     introduction:
       "With food being one of the highest numbers on the expenses list, it's no surprise that it's becoming more and more vital to do the math when going grocery shopping.",
-    image: "/article1.png",
+    image: "/article3.png",
     imageCaption:
       "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     sections: [
