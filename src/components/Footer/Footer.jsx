@@ -22,7 +22,7 @@ const Footer = () => {
         <div className="container px-3 ">
           <div className="flex flex-col lg:flex-row gap-8 py-20">
             {/* Logo Section */}
-            <div className="w-full lg:w-[40%] flex  lg:justify-start">
+            <div className="w-full lg:w-[35%] flex  lg:justify-start">
               <Link href="/" className="inline-block">
                 <Image
                   src={FooterLogo}
@@ -35,7 +35,7 @@ const Footer = () => {
             </div>
 
             {/* Links and Contact Section */}
-            <div className="w-full lg:w-[60%] flex flex-col sm:flex-row gap-8 text-white font-[MayekaDemiBold]">
+            <div className="w-full lg:w-[65%] flex flex-col sm:flex-row gap-8 text-white font-[MayekaDemiBold]">
               {/* Quick Links */}
               <div className="flex-1 md:w-[33%]">
                 <h3 className="text-lg font-semibold mb-4 opacity-60 font-[AbdoMasterRegular]">
@@ -128,7 +128,7 @@ const Footer = () => {
 
               {/* Contact Info */}
               <div className="flex-1 md:w-[33%]">
-                <h3 className="text-lg font-semibold mb-4 opacity-60 font-[AbdoMasterRegular]">
+                <h3 className="text-lg font-normal mb-4 opacity-60 font-[AbdoMasterRegular]">
                   Get In Touch
                 </h3>
                 <ul className="space-y-3">
@@ -141,11 +141,11 @@ const Footer = () => {
                       +01500028306
                     </Link>
                   </li>
-                  <li className="flex items-center gap-2">
+                  <li className="flex  items-center gap-2">
                     <MdEmail />
                     <Link
                       href="mailto:info@mealtopia.com"
-                      className="hover:text-gray-300 transition-colors"
+                      className="hover:text-gray-300 transition-colors "
                     >
                       info@mealtopia.com
                     </Link>
@@ -156,28 +156,28 @@ const Footer = () => {
                       className="hover:text-gray-300 transition-colors"
                       aria-label="Facebook"
                     >
-                      <FaFacebookF className="text-xl" />
+                      <FaFacebookF size={20} />
                     </Link>
                     <Link
                       href="#"
                       className="hover:text-gray-300 transition-colors"
                       aria-label="Instagram"
                     >
-                      <FaInstagram className="text-xl" />
+                      <FaInstagram size={20} />
                     </Link>
                     <Link
                       href="#"
                       className="hover:text-gray-300 transition-colors"
                       aria-label="Twitter"
                     >
-                      <FaTwitter className="text-xl" />
+                      <FaTwitter size={20} />
                     </Link>
                     <Link
                       href="#"
                       className="hover:text-gray-300 transition-colors"
                       aria-label="YouTube"
                     >
-                      <FaYoutube className="text-xl" />
+                      <FaYoutube size={20} />
                     </Link>
                   </li>
                 </ul>
@@ -190,9 +190,9 @@ const Footer = () => {
       {/* Second Row - Purple Background */}
       <div className="w-full bg-[#562D80]">
         <div className="w-full flex justify-center">
-          <div className="container flex justify-between items-center px-3 py-5 font-[MayekaDemiBold]">
+          <div className="container flex flex-col md:flex-row justify-between gap-2 items-center px-3 py-5 font-[MayekaDemiBold]">
             {/* Add your content for the second row here */}
-            <h1 className="text-xs w-1/2 text-white/60">
+            <h1 className="text-xs text-center w-full md:w-1/2 text-white/60">
               Copyright © 2022 MEALTOPIA LIFESTYLE CORP, All Rights Reserved.
             </h1>
             <ul className="flex gap-5 text-xs text-white/80 ">
