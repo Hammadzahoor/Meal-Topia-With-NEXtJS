@@ -44,16 +44,16 @@ export default function ArticlesPage() {
               {/* Article Title */}
               <Link href={`/articles/${article.slug}`}>
                 <h2
-                  className="text-[#4C1D95] text-xl font-semibold mb-3 hover:text-[#00CB71] transition-colors title={article.title}"
+                  className="text-[#4C1D95] text-xl font-semibold mb-3 hover:text-[#00CB71] transition-colors line-clamp-1"
                   title={article.title}
                 >
-                  {/* {article.title} */}
-                  {trimText(article.title, 25)}
+                  {article.title}
+                  {/* {trimText(article.title, 24)} */}
                 </h2>
               </Link>
 
               {/* Article Description */}
-              <p className="text-gray-600 mb-4 line-clamp-2">
+              <p className="text-gray-600 mb-4 line-clamp-3">
                 {article.introduction}
               </p>
 

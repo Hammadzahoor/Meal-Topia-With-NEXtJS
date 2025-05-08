@@ -269,8 +269,9 @@ export default function Home() {
 
                   {/* Article Title */}
                   <Link href={`/articles/${article.slug}`}>
-                    <h2 className="text-[#4C1D95] text-xl font-semibold mb-3 hover:text-[#00CB71] transition-colors">
-                      {trimText(article.title, 25)}
+                    <h2 className="text-[#4C1D95] text-xl font-semibold mb-3 hover:text-[#00CB71] transition-colors line-clamp-1">
+                      {/* {trimText(article.title, 25)} */}
+                      {article.title}
                     </h2>
                   </Link>
 

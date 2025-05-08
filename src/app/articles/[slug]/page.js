@@ -45,14 +45,19 @@ export default function ArticlePage({ params }) {
             {article.introduction && (
               <p className="text-lg text-gray-700">{article.introduction}</p>
             )}
+            {article.content && (
+              <p className="text-lg text-gray-700">{article.content}</p>
+            )}
 
             {/* Main Image - Optional */}
             {article.image && (
               <div className="my-8">
-                <img
+                <Image
                   src={article.image}
                   alt={article.title}
-                  className="w-full h-[550px] rounded-lg shadow-lg"
+                  width={1050}
+                  height={550}
+                  className="w-full rounded-lg shadow-lg"
                 />
                 {article.imageCaption && (
                   <p className="text-gray-600 italic text-sm mt-2">
