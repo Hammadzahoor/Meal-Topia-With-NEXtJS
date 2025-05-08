@@ -72,7 +72,7 @@ export default function ArticlePage({ params }) {
               article.sections.map((section, index) => (
                 <div key={index} className="mt-6">
                   {section.heading && (
-                    <h2 className="text-2xl font-bold text-purple-800 mb-4">
+                    <h2 className="text-2xl font-bold text-[#412B59] mb-4">
                       {section.heading}
                     </h2>
                   )}
@@ -96,7 +96,7 @@ export default function ArticlePage({ params }) {
             {/* List section - Optional */}
             {article.listSection && (
               <div className="mt-6">
-                <h3 className="text-xl font-semibold text-gray-800 mb-4">
+                <h3 className="text-xl font-bold font-[MayekaBold] text-gray-800 mb-4">
                   {article.listSection.heading}
                 </h3>
                 <ul className="list-disc pl-6 space-y-2 text-gray-700">

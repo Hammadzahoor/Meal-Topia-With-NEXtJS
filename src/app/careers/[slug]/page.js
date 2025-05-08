@@ -34,7 +34,7 @@ export default function CareerDetail({ params }) {
           <span className="font-bold text-[#5F6D7E]">{career.title}</span>
         </div>
         {/* Title & Date */}
-        <h1 className="text-3xl md:text-4xl font-bold text-[#3d2257] mb-2 text-left w-full">
+        <h1 className="text-3xl md:text-4xl font-bold text-[#3d2257] mb-2 text-left w-full font-[MayekaBold]">
           {career.title}
         </h1>
         <div className="text-gray-400 text-sm mb-6 w-full">{career.date}</div>
