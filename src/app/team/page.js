@@ -1,4 +1,5 @@
 import { FaTwitter, FaFacebook, FaLinkedin, FaTelegram } from "react-icons/fa";
+import Image from "next/image";
 
 export default function TeamPage() {
   // Team members data
@@ -57,9 +58,11 @@ export default function TeamPage() {
               <div className="flex flex-col items-start">
                 <div className=" bg-white w-full flex justify-center items-center h-80 rounded-lg shadow-md p-6 mb-4">
                   <div className="w-60 h-60 rounded-full overflow-hidden ">
-                    <img
+                    <Image
                       src={member.image}
                       alt={member.name}
+                      width={300}
+                      height={300}
                       className="w-full h-full object-cover"
                     />
                   </div>
