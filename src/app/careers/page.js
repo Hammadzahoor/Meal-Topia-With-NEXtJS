@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FiZap } from "react-icons/fi";
 import { careers } from "@/data/careers";
+import CareerCard from "@/components/CareerCard";
 
 const Careers = () => {
   return (
@@ -17,24 +18,14 @@ const Careers = () => {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
           {careers.map((career, idx) => (
-            <div
-              key={idx}
-              className="bg-white rounded-xl shadow-md p-8 flex flex-col gap-4 transition-transform hover:scale-101"
-            >
-              <div className="flex items-center justify-center w-12 h-12 rounded-full border border-gray-200 mb-2">
-                <FiZap className="text-green-500 text-3xl" />
-              </div>
-              <h3 className="text-2xl font-semibold text-purple-700 mb-2 font-[MayekaDemiBold]">
-                {career.title}
-              </h3>
-              <p className="text-gray-500 flex-1">{career.description}</p>
-              <Link
-                href={`/careers/${career.slug}`}
-                className="mt-4 text-green-600 font-semibold hover:underline flex items-center gap-1"
-              >
-                Apply Now <span className="ml-1">→</span>
-              </Link>
-            </div>
+            <CareerCard
+            key={idx}
+            title={career.title}
+            description={career.description}
+            slug={career.slug}
+            icon={<FiZap size={30} className="text-green-500" />}
+            buttonLabel="Apply Now"
+          />
           ))}
         </div>
       </div>
